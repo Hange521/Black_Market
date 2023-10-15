@@ -16,6 +16,12 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+span{
+  color: #DE8F5F;
 }
 
 .heading{
@@ -44,13 +50,18 @@
 }
 
 .header-2{
+    width: 123rem;
     margin: 0%;
-    padding: 0%;
     background: rgb(114,76,4);
-    background: linear-gradient(90deg, rgba(114,76,4,1) 0%, rgba(253,205,29,1) 64%, rgba(252,228,69,1) 100%);
+    background: linear-gradient(90deg, rgb(238, 191, 104) 0%, rgba(253,205,29,1) 64%, rgba(252,228,69,1) 100%);
     justify-content: space-between;
     display: flex;
     padding: 25px;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 1px 10px 17px -1px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 1px 10px 17px -1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 1px 10px 17px -1px rgba(0,0,0,0.62);
 }
 
 .header-2, h1{
@@ -80,6 +91,7 @@
     background: url(banner-bg.jpg) no-repeat;
     background-size: cover;
     height: 59rem;
+    padding-top: 7rem;
 }
 
 .home .row{
@@ -283,4 +295,49 @@ button {
 .arrivals .arrivals-slider .box .content .stars i{
   font-size: 1.5rem;
   color:var(--green);
+}
+
+.footer .box-container{
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  background: linear-gradient(90deg, rgb(238, 191, 104) 0%, rgba(253,205,29,1) 64%, rgba(252,228,69,1) 100%);
+  padding:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 20rem;
+}
+
+.footer .box-container .box h3{
+  color: black;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer .box-container .box a{
+  color:#666;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.footer .box-container .box a:hover{
+  color: brown;
+}
+
+.footer .box-container .credit{
+  text-align: center;
+  width:100%;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  font-size: 1.5rem;
+  padding:1rem;
+  padding-top: 2rem;
+  color:#999;
+}
+
+.footer .box-container .credit span{
+  color: brown;
 }
